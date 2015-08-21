@@ -31,7 +31,7 @@ var sparklyFunctions = {
     btn.id = id;
     document.body.appendChild(btn);
   },
-  backgroundImage: function(source) {
+  backgroundImg: function(source) {
     document.body.style.backgroundImage = "url(" + source + ")";
     document.body.style.backgroundPosition = "center center";
     document.body.style.backgroundRepeat = "no-repeat";

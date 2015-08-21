@@ -30,5 +30,12 @@ var sparklyFunctions = {
     btn.addEventListener("click", event);
     btn.id = id;
     document.body.appendChild(btn);
+  },
+  backgroundImage: function(source) {
+    document.body.style.backgroundImage = "url(" + source + ")";
+    document.body.style.backgroundPosition = "center center";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundAttachment = "fixed";
+    document.body.style.backgroundSize = "cover";
   }
 };

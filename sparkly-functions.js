@@ -30,12 +30,12 @@ var sparklyFunctions = {
     btn.addEventListener("click", event);
     btn.id = id;
     document.body.appendChild(btn);
-  }/*,
-  backgroundImg: function(source) {
-    document.body.style.backgroundImage = "url(" + source + ")";
-    document.body.style.backgroundPosition = "center center";
-    document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.backgroundAttachment = "fixed";
-    document.body.style.backgroundSize = "cover";
-  }*/
+  },
+  // Play a sound. This function can easily be hooked up to an event listener
+  sound: function(source) {
+    var audio = document.createElement("audio");
+    audio.src = source;
+    audio.autoplay = "autoplay";
+    document.body.appendChild("audio");
+  }
 };

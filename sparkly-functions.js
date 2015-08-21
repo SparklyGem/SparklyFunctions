@@ -23,7 +23,7 @@ var sparklyFunctions = {
   roundToNearestX: function(num, numThatWeWillRoundToTheNearestOf) {
     return Math.round(num/numThatWeWillRoundToTheNearestOf) * numThatWeWillRoundToTheNearestOf;
   },  
-  // Makes a button with a value (text, an image, or any HTML element), gives it an event listener, and, optionally, give it an id
+  // Makes a button with a value (text, an image, or any HTML element), what to do when it's clicked, and, optionally, give it an id
   button: function(value, event, id) {
     var btn = document.createElement("button");
     btn.innerHTML = value;

@@ -1,7 +1,7 @@
 var sparklyFunctions = {
   // Determines if a number is within a certain distance from another number
   aboutTheSame: function(num1, num2, maxDistance) {
-    return abs(num1 - num2) <= maxDistance;
+    return Math.abs(num1 - num2) <= maxDistance;
   },
   // Determines if a number is in a certain range
   inRange: function(num, minNum, maxNum) {

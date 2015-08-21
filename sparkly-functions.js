@@ -1,8 +1,8 @@
 var sparklyFunctions = {
   // Determines if a number is within a certain distance from another number
-  /*aboutTheSame: function(num1, num2, maxDistance) {
+  aboutTheSame: function(num1, num2, maxDistance) {
     return Math.abs(num1 - num2) <= maxDistance;
-  },*/
+  },
   // Determines if a number is in a certain range
   inRange: function(num, minNum, maxNum) {
     return num >= minNum && num <= maxNum;
@@ -30,5 +30,18 @@ var sparklyFunctions = {
     btn.addEventListener("click", event);
     btn.id = id;
     document.body.appendChild(btn);
+  },
+  backgroundImg: function(source) {
+    document.body.style.backgroundImage = "url(" + source + ")";
+    document.body.style.backgroundPosition = "center center";
+    document.body.style.beckgroundRepeat = "no-repeat";
+    document.body.style.backgroundAttachment = "fixed";
+    document.body.style.backgroundSize = "cover";
+  },
+  sound: function(source) {
+    var audio = document.createElement("audio");
+    audio.src = source;
+    audio.autoplay = "autoplay";
+    document.body.appendChild(audio);
   }
 };

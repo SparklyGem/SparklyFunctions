@@ -1,5 +1,5 @@
 var sparklyFunctions = {
-  // Determines if a number is within a certain distance from another number
+  // Determines if a number is within a certain distance from another number (currently not working)
   aboutTheSame: function(num1, num2, maxDistance) {
     return Math.abs(num1 - num2) <= maxDistance;
   },
@@ -31,6 +31,7 @@ var sparklyFunctions = {
     btn.id = id;
     document.body.appendChild(btn);
   },
+  // Make a background of an image (currently not working)
   backgroundImg: function(source) {
     document.body.style.backgroundImage = "url(" + source + ")";
     document.body.style.backgroundPosition = "center center";
@@ -38,6 +39,7 @@ var sparklyFunctions = {
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundSize = "cover";
   },
+  // Play a sound file (currently not working)
   sound: function(source) {
     var audio = document.createElement("audio");
     audio.src = source;

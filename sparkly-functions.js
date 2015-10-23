@@ -33,7 +33,7 @@ var sparklyFunctions = {
   },
   // Make a background of an image (currently not working)
   backgroundImg: function(source) {
-    document.body.style.backgroundImage = "url(" + source + ")";
+    document.body.style.backgroundImage = "url(\"" + source + "\")";
     document.body.style.backgroundPosition = "center center";
     document.body.style.beckgroundRepeat = "no-repeat";
     document.body.style.backgroundAttachment = "fixed";
